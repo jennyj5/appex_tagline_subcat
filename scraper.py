@@ -3,11 +3,14 @@ from scrapemark import scrape
 import scraperwiki
 data = scraperwiki.scrape("https://dl.dropboxusercontent.com/s/9h5kjpapd6uh9y3/new-getappsurls-result2.csv?dl=0")
 line = 0
+count = 0
 import csv
 reader = csv.reader(data.splitlines())
 headerline = reader.next()
 for row in reader:
-
+     count = count+1
+     if count>100:
+          break
      URL = row[0]
      print URL
      html = scraperwiki.scrape(URL)

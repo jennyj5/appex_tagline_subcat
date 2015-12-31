@@ -1,7 +1,7 @@
 import scraperwiki
 from scrapemark import scrape
 import scraperwiki
-data = scraperwiki.scrape("https://dl.dropboxusercontent.com/u/87106626/Apps.csv")
+data = scraperwiki.scrape("https://dl.dropboxusercontent.com/s/9h5kjpapd6uh9y3/new-getappsurls-result2.csv?dl=0")
 line = 0
 import csv
 reader = csv.reader(data.splitlines())

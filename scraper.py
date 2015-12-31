@@ -9,7 +9,7 @@ reader = csv.reader(data.splitlines())
 headerline = reader.next()
 for row in reader:
      count = count+1
-     print "HELLOOOO:" + count
+     print "HELLOOOO:" + str(count)
      if count>100:
           break
      URL = row[0]
